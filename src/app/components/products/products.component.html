@@ -1,0 +1,20 @@
+
+<div class="product-grid">
+    @for (product of products; track product.id) {
+      <div class="product-card">
+        <img [src]="product.image" [alt]="product.title" class="product-image" />
+        <div class="product-info">
+          <h3 class="product-title">{{ product.title }}</h3>
+          <p class="product-description">{{ product.description }}</p>
+          <p class="product-price">$ {{ product.price }}</p>
+          <p class="product-category">{{ product.category }}</p>
+          <div class="product-rating">
+            <span>⭐ {{ product.rating.rate }}</span>
+            <span>({{ product.rating.count }} reviews)</span>
+          </div>
+          <button class="add-to-cart-button" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+      </div>
+    }
+  </div>
+  

@@ -1,0 +1,37 @@
+
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #241548; /* A nice blue color */
+    color: white;
+    padding: 0.5rem 2rem;
+    height: 50px; /* Thin header */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Nav Items Styling */
+  .nav-items {
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-items a:hover {
+    color: #FFDC00; /* Bright yellow on hover */
+  }
+  
